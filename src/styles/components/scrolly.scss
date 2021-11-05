@@ -1,0 +1,70 @@
+/* ==========================================================================
+   scrolly / component
+   ========================================================================== */
+
+.has-js {
+    [data-scrolly='Appear'] {
+        opacity: 0;
+        transform: scale(0);
+        transition: all 0.6s ease-out;
+
+        &.is-active {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    [data-scrolly='AppearFromRight'] {
+        opacity: 0;
+        transform: translateX(50%);
+        transition: all 1s ease-out;
+
+        &.is-active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    [data-scrolly='AppearFromLeft'] {
+        opacity: 0;
+        transform: translateX(-50%);
+        transition: all 0.2s ease-out;
+
+        &.is-active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    [data-scrolly='AppearFromLeft'] {
+        opacity: 0;
+        transform: translateX(-50%);
+        transition: all 0.4s ease-out;
+
+        &.is-active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    [data-scrolly='AppearFromBottom'] {
+        opacity: 0;
+        transform: translateY(50%);
+        transition: all 1s ease-out;
+
+        &.is-active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    [data-scrolly='AppearFromTop'] {
+        opacity: 0;
+        transform: translateY(-50%);
+        transition: all 1s ease-out;
+
+        &.is-active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}

@@ -1,0 +1,73 @@
+.hero {
+    height: 325px;
+    background-attachment: fixed;
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-auberge {
+    background-image: url('../../assets/images/hero_auberge.png');
+}
+
+.hero-apropos {
+    background-image: url('../../assets/images/a_propos_hero.jpg');
+}
+
+.hero-contact {
+    background-image: url('../../assets/images/imagehero2.jpg');
+}
+.hero-restaurant {
+    background-image: url('../../assets/images/image bière.jpg');
+}
+.hero-pub {
+    background-image: url('../../assets/images/terasse.jpg');
+}
+
+.hero-accueil {
+    .carousel-accueil {
+        position: relative;
+    }
+
+    .container-texte-hero {
+        position: absolute;
+        top: 5%;
+        left: 0;
+        z-index: 99;
+
+        width: 100vw;
+        height: 100vh;
+
+        display: flex;
+        justify-content: left;
+        align-items: center;
+
+        h1,
+        p,
+        a {
+            color: var(--color-white);
+            max-width: 590px;
+        }
+
+        p {
+            font-size: var(--font-size-h5);
+
+            margin: var(--spacing-md) 0 var(--spacing-xl);
+
+            @media screen and (max-width: $breakpoint-md) {
+                font-size: var(--font-size-content);
+            }
+        }
+
+        .savoir-plus-hero {
+            background-color: var(--color-primary);
+            padding: 12px 20px;
+            border-radius: 3px;
+        }
+
+        .savoir-plus-hero:hover {
+            background-color: var(--color-primary-dark);
+            text-decoration: none;
+        }
+    }
+}

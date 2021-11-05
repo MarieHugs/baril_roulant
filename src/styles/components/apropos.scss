@@ -1,0 +1,22 @@
+.intro-apropos .wrapper {
+    margin-top: var(--spacing-xl);
+
+    h1 {
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .apropos_section {
+        margin-top: var(--spacing-xl);
+
+        @media screen and (min-width: $breakpoint-sm) {
+            img {
+                float: left;
+                width: 45%;
+                margin: 10px 20px;
+            }
+            p {
+                padding: 0 20px;
+            }
+        }
+    }
+}

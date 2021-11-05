@@ -1,0 +1,72 @@
+.page__erreur .wrapper {
+    text-align: center;
+
+    color: var(--color-black);
+
+    .mobile_404 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: var(--spacing-xl);
+
+        @media screen and (min-width: $breakpoint-md) {
+            margin-top: 100px;
+        }
+    }
+    h5 {
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: var(--spacing-md);
+    }
+    h1 {
+        padding: 10px;
+        margin-left: var(--spacing-sm);
+        color: var(--color-primary-dark);
+    }
+
+    p {
+        font-family: var(--font-secondary);
+        font-size: var(--font-size-very-small);
+        margin: 0;
+
+        @media screen and (min-width: $breakpoint-md) {
+            font-size: var(--font-size-small);
+        }
+    }
+    svg {
+        font-size: 35px;
+        margin-bottom: 0;
+        color: var(--color-primary-dark);
+
+        @media screen and (min-width: $breakpoint-md) {
+            font-size: 50px;
+        }
+    }
+    .beer {
+        font-size: 150px;
+        margin-top: var(--spacing-md);
+        color: var(--color-black);
+    }
+
+    .brasserie_404 {
+        @media screen and (min-width: $breakpoint-md) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            svg {
+                width: 30%;
+                margin-left: -5%;
+                order: 1;
+
+                font-size: 200px;
+            }
+            h5 {
+                width: 50%;
+                margin-bottom: 0;
+                margin-left: 10%;
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+//FONTS
+// ici sont chargé les Google Fonts avec le @import
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Merriweather:wght@400;700&display=swap');
+
+// TOOLS
+// mixins et fonctions utilisés globalement dans le SCSS (Sass)
+@import 'tools/cover';
+
+// SETTINGS
+// Contient les variables sur les polices, les définitions de couleurs, les définitions de  grandeurs,   etc.
+@import 'settings/colors';
+@import 'settings/dimensions';
+@import 'settings/easing';
+@import 'settings/fonts';
+
+// GENERIC
+// Permet de réinitialiser les CSS et de changer le modèle de boîte en box-sizing: border-box
+@import 'generic/normalize';
+@import 'generic/reset';
+
+// ELEMENTS
+// Modification des styles généraux de la page. Ce sont les styles qui seront généralement hérités par les éléments de la page.
+@import 'elements/body';
+@import 'elements/headings';
+@import 'elements/links';
+@import 'elements/wrapper';
+
+// COMPONENTS
+// Composants d'interface utilisateur spécifiques.
+// C’est là que la majorité de notre travail a lieu.
+@import '../../node_modules/swiper/components/scrollbar/scrollbar.scss';
+@import '../../node_modules/swiper/components/pagination/pagination.scss';
+@import '../../node_modules/swiper/swiper.scss';
+@import 'components/header';
+@import 'components/icons';
+@import 'components/modal';
+@import 'components/scrolly';
+@import 'components/hero.scss';
+@import 'components/apropos.scss';
+@import 'components/infolettre.scss';
+@import 'components/boutons.scss';
+@import 'components/contact.scss';
+@import 'components/auberge.scss';
+@import 'components/carousel.scss';
+@import 'components/restaurant.scss';
+@import 'components/accueil.scss';
+@import 'components/404.scss';
+@import 'components/page.scss';
+@import 'components/pubs.scss';
+@import 'components/cursor.scss';
+@import 'components/footer.scss';
+
+// UTILITIES
+// Utilitaires et classes auxiliaires avec possibilité de remplacer tout ce qui précède, par exemple masquer les éléments de la page
+@import 'utilities/accessibility';
+@import 'utilities/spacing';

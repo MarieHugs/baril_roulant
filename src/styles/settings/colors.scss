@@ -1,0 +1,18 @@
+/* ==========================================================================
+   COLORS / SETTINGS
+   ========================================================================== */
+
+:root {
+    // Couleur de base
+    --color-white: #fafafa;
+    --color-black: #252422;
+
+    // Couleurs du projet
+    --color-primary: #c06722;
+    --color-primary-dark: #8f3e00;
+
+    --color-bg-primary: var(--color-white);
+    --color-bg-secondary: #e0dcd5;
+    --color-bg-dark: var(--color-black);
+    --color-bg-dark-light: #433c34;
+}

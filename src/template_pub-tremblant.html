@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Le Baril Roulant</title>
+
+        <link rel="stylesheet" href="styles/main.css" />
+        <script src="scripts/main.js" defer></script>
+    </head>
+
+    <body data-component="Cursor">
+        <div class="cursor"></div>
+        <div class="hero hero-pub-tremblant"></div>
+        <section class="pub">
+            <div class="wrapper" data-component="Scrolly">
+                <h1>Le Pub de Tremblant</h1>
+                <p data-scrolly="AppearFromBottom">
+                    Notre dernier bébé, le pub de Tremblant est situé en plein
+                    cœur du vieux village de Tremblant. Salon de dégustations et
+                    de découvertes artistiques et culturelles, c'est un endroit
+                    convivial et familial. Venez-nous voir !
+                </p>
+
+                <div class="button-flex">
+                    <a
+                        href=""
+                        class="button-flex-item"
+                        data-component="AppearFrombottom"
+                        >Menu bouffe</a
+                    >
+                    <a href="" class="button-flex-item"
+                        >Menu bières du moment</a
+                    >
+                </div>
+
+                <section class="galerie-tremblant">
+                    <h2>Galerie d'images</h2>
+                    <div class="grid_img">
+                        <div class="img">
+                            <img
+                                data-scrolly="AppearFromRight"
+                                src="assets/images/devantpubhiver.jpg"
+                                alt="pub hiver"
+                            />
+                        </div>
+                        <div class="img">
+                            <img
+                                data-scrolly="AppearFromLeft"
+                                src="assets/images/devantaubergenuit.jpg"
+                                alt="aubergenuit"
+                            />
+                        </div>
+
+                        <div class="img">
+                            <img
+                                data-scrolly="AppearFromRight"
+                                src="assets/images/journee_biere.jpg"
+                                alt="consommations de bieres"
+                            />
+                        </div>
+
+                        <div class="img img__secondtolast">
+                            <img
+                                data-scrolly="AppearFromRight"
+                                src="assets/images/devantpubhiver.jpg"
+                                alt="devant du pub en hiver"
+                            />
+                        </div>
+                        <div class="img img__last">
+                            <img
+                                data-scrolly="AppearFromLeft"
+                                src="assets/images/Pub.jpg"
+                                alt="photo de l'intérieur du pub"
+                            />
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </body>
+</html>

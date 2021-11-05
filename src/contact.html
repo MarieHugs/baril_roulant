@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Le baril roulant / Restaurant</title>
+
+        <link rel="stylesheet" href="styles/main.css" />
+        <script src="scripts/main.js" defer></script>
+    </head>
+    <body data-component="Cursor">
+        <div class="cursor"></div>
+        <div class="hero hero-contact"></div>
+
+        <div class="wrapper" data-component="Scrolly" data-intersections="4">
+            <div class="contact">
+                <h1>Contact</h1>
+                <div class="form_contact">
+                    <form
+                        action=""
+                        class="form"
+                        autocomplete="off"
+                        data-component="Form"
+                    >
+                        <fieldset class="grid">
+                            <div class="input" data-scrolly="AppearFromBottom">
+                                <label for="prenom" class="input__label"
+                                    >Prénom
+                                </label>
+                                <input
+                                    type="text"
+                                    name="prenom"
+                                    id="prenom"
+                                    placeholder="Votre Prénom"
+                                    class="input__element"
+                                    required
+                                />
+                            </div>
+                            <div class="input" data-scrolly="AppearFromBottom">
+                                <label for="nom" class="input__label"
+                                    >Nom</label
+                                >
+                                <input
+                                    type="text"
+                                    name="nom"
+                                    id="nom"
+                                    placeholder="Votre Nom"
+                                    class="input__element"
+                                    required
+                                />
+                            </div>
+                            <div class="input" data-scrolly="AppearFromBottom">
+                                <label for="emailcontact" class="input__label"
+                                    >Courriel</label
+                                >
+
+                                <input
+                                    type="email"
+                                    name="emailcontact"
+                                    id="emailcontact"
+                                    placeholder="placeholder@hotmail.com"
+                                    class="input__element"
+                                    required
+                                />
+                            </div>
+                            <div class="input" data-scrolly="AppearFromBottom">
+                                <label for="phonecontact" class="input__label"
+                                    >Téléphone</label
+                                >
+                                <input
+                                    type="text"
+                                    name="phonecontact"
+                                    id="phonecontact"
+                                    placeholder="(514)-351-3754."
+                                    pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$"
+                                    class="input__element"
+                                    required
+                                />
+                            </div>
+
+                            <div class="input textarea u-grid-fullwidth">
+                                <label class="input__label" for="comment"
+                                    >Commentaire</label
+                                >
+
+                                <textarea
+                                    class="input__element"
+                                    name="comment"
+                                    id="comment"
+                                    maxlength="500"
+                                    required
+                                ></textarea>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="grid-radio">
+                            <div class="input radio">
+                                <input
+                                    type="radio"
+                                    id="gender1"
+                                    class="input__element"
+                                    name="identity[]"
+                                />
+
+                                <label for="gender1">Homme</label>
+                            </div>
+
+                            <div class="input radio">
+                                <input
+                                    type="radio"
+                                    id="gender2"
+                                    name="identity[]"
+                                    class="input__element"
+                                />
+                                <label for="gender2">Femme</label>
+                            </div>
+
+                            <div class="input radio">
+                                <input
+                                    type="radio"
+                                    name="identity[]"
+                                    id="gender4"
+                                    class="input__element"
+                                /><label for="gender4">Autre</label>
+                            </div>
+                        </fieldset>
+                        <footer class="form__footer">
+                            <button class="btn">Envoyer</button>
+                        </footer>
+                        <div class="form__confirmation">
+                            <h2>Merci d'avoir complété le formulaire !</h2>
+                            <p>Votre formulaire a bien été envoyé.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="map_contact">
+                <div>
+                    <h3>Ou visitez-nous en vrai, c'est encore mieux!</h3>
+                    <p>
+                        1430 Rue de l'Académie, Val-David, Québec, J0T 2N0
+                        819-322-2280 / auberge@barilroulant.com
+                    </p>
+                </div>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d692.4957503010671!2d-74.21068367140299!3d46.03148780153926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccf3f7f3a696f1d%3A0x1aa1da6d68dd1583!2sLe%20Baril%20Roulant%20-%20Auberge%20%26%20Restaurant!5e0!3m2!1sfr!2sca!4v1635289458390!5m2!1sfr!2sca"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                ></iframe>
+            </div>
+        </div>
+    </body>
+</html>

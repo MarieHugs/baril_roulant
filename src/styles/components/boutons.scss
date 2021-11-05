@@ -1,0 +1,102 @@
+.btn {
+    font-family: var(--font-primary);
+
+    background-color: var(--color-primary);
+    color: var(--color-white);
+
+    border-radius: 3px;
+    border: none;
+}
+
+.btn-lg {
+    padding: 10px 20px;
+}
+.button-flex {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-md);
+
+    @media screen and (min-width: $breakpoint-sm) {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+a.button-flex-item {
+    text-decoration: none;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: 3px;
+    margin-top: var(--spacing-lg);
+    transition: all 0.2s ease-in;
+    @media screen and (min-width: $breakpoint-sm) {
+        margin-top: var(--spacing-sm);
+        margin-left: var(--spacing-lg);
+    }
+    &:hover {
+        background-color: var(--color-primary-dark);
+    }
+}
+
+a.button-item {
+    text-decoration: none;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: 3px;
+    margin: var(--spacing-md);
+    transition: all 0.2s ease-in;
+
+    &:hover {
+        background-color: var(--color-primary-dark);
+        color: var(--color-bg-dark-light);
+    }
+}
+.button-biere {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: var(--spacing-lg);
+}
+.button-flex {
+    padding: var(--spacing-sm);
+    margin: var(--spacing-md);
+}
+
+body .gform_wrapper .gform_validation_errors {
+    display: none;
+}
+body .gform_wrapper .gform_footer input[type='submit'] {
+    font-family: var(--font-primary);
+
+    background-color: var(--color-primary);
+    color: var(--color-white);
+
+    border-radius: 3px;
+    border: none;
+    padding: var(--spacing-sm) var(--spacing-md);
+
+
+    &:hover {
+        background-color: var(--color-primary-dark);
+        color: var(--color-bg-dark-light);
+    }
+}
+body .gform_wrapper .gform_footer {
+
+    display: flex;
+    justify-content: center;
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Erreur 404</title>
+
+        <link rel="stylesheet" href="styles/main.css" />
+        <script src="scripts/main.js" defer></script>
+    </head>
+
+    <body data-component="Cursor">
+        <div class="site-container" data-component="Scrolly">
+            <div class="cursor"></div>
+            <div class="page__erreur">
+                <div class="wrapper">
+                    <div class="mobile_404" data-scrolly="AppearFromTop">
+                        <svg class="icon">
+                            <use xlink:href="#icon-emoji"></use>
+                        </svg>
+                        <h1>Erreur 404!</h1>
+                    </div>
+
+                    <div class="brasserie_404" data-scrolly="Appear">
+                        <svg class="icon icon--stroke beer">
+                            <use xlink:href="#icon-beer"></use>
+                        </svg>
+                        <h5 class="evidence">
+                            Oops... Avez-vous visité notre microbrasserie? Car
+                            vous semblez avoir du trouble à naviguer!
+                        </h5>
+                    </div>
+
+                    <p data-scrolly="AppearFromBottom">
+                        Cette page n'existe pas!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

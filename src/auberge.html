@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Auberge du baril roulant</title>
+
+        <link rel="stylesheet" href="styles/main.css" />
+        <script src="scripts/main.js" defer></script>
+    </head>
+
+    <body data-component="Cursor">
+        <div class="site-container" data-component="Scrolly">
+            <div class="cursor"></div>
+            <div class="hero hero-auberge"></div>
+
+            <div class="intro-auberge" data-scrolly="AppearFromLeft">
+                <div class="wrapper">
+                    <h1>L'auberge</h1>
+
+                    <p>
+                        Dédiée à notre bistro du terroir et à l'hébergement,
+                        l'auberge propose de vous en mettre plein les papilles
+                        et les yeux, tout en savourant nos bières artisanales.
+                        Profitez de notre terrasse la plus zen du village, en
+                        bordure de la rivière, puis prolongez votre passage à
+                        Val-David en séjournant dans l'une de nos 7 chambres
+                        privées ou dans notre dortoir de 14 places. L'auberge
+                        est un lieu ou le cachet confortable traditionnel se
+                        marie à la vibrance et au dynamisme d'une auberge de
+                        jeunesse.
+                    </p>
+                    <p>
+                        Si vous souhaitez bonifiez votre séjour dans notre
+                        magnifique coin de pays d'une ou de plusieurs nuit à
+                        l'auberge, nous vous invitons à utiliser l'interface
+                        ci-dessous pour effectuer une réservation en ligne !
+                    </p>
+                    <p class="evidence">
+                        RÉSERVEZ INSTANTANÉMENT SUR NOTRE SITE, NOUS VOUS
+                        GARANTISSONS LE MEILLEUR PRIX!
+                    </p>
+                </div>
+            </div>
+
+            <div class="reservation-auberge" data-scrolly="Appear">
+                <div class="wrapper">
+                    <form action="" class="date-auberge">
+                        <fieldset>
+                            <div class="input">
+                                <label class="input__label" for="arrive"
+                                    >Arrivé</label
+                                >
+                                <input
+                                    type="date"
+                                    class="input__element"
+                                    name="arrive"
+                                    id="arrive"
+                                />
+                            </div>
+                            <div class="input">
+                                <label class="input__label" for="depart"
+                                    >Départ</label
+                                >
+                                <input
+                                    type="date"
+                                    class="input__element"
+                                    name="depart"
+                                    id="depart"
+                                />
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+
+            <section
+                class="chambre-auberge"
+                data-component="Filtre"
+                data-scrolly="AppearFromRight"
+            >
+                <div class="wrapper">
+                    <nav class="nav-auberge">
+                        <fieldset>
+                            <select class="input">
+                                <option
+                                    label="Chambre lit queen"
+                                    class="input__element"
+                                    name="chambre"
+                                    id="chambre"
+                                >
+                                    Chambre lit queen
+                                </option>
+                                <option
+                                    label="Chambre Familliale"
+                                    class="input__element"
+                                    name="chambre"
+                                    id="chambre"
+                                >
+                                    Chambre Familliale
+                                </option>
+                                <option
+                                    label="Chambre lits jumeaux"
+                                    class="input__element"
+                                    name="chambre"
+                                    id="chambre"
+                                >
+                                    Chambre lits jumeaux
+                                </option>
+                                <option
+                                    label="Chambre VIP - Suite"
+                                    class="input__element"
+                                    name="chambre"
+                                    id="chambre"
+                                >
+                                    Chambre VIP -Suite
+                                </option>
+                            </select>
+                        </fieldset>
+                        <ul>
+                            <li>
+                                <a
+                                    class="btn_chambre active"
+                                    data-filtre="queen"
+                                    >Chambre lit queen</a
+                                >
+                            </li>
+                            <li>
+                                <a class="btn_chambre" data-filtre="famille"
+                                    >Chambre Familliale</a
+                                >
+                            </li>
+                            <li>
+                                <a class="btn_chambre" data-filtre="twins"
+                                    >Chambre lits jumeaux</a
+                                >
+                            </li>
+                            <li>
+                                <a class="btn_chambre" data-filtre="suite"
+                                    >Chambre VIP - Suite</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="chambres">
+                        <article class="chambre" data-filtre="queen">
+                            <div class="image-chambre">
+                                <div class="image-relative">
+                                    <img
+                                        src="assets/images/chambre1.png"
+                                        alt=""
+                                    />
+                                    <div class="prix-chambre">
+                                        <p class="p1__prix">125$CAD</p>
+                                        <p>Disponible</p>
+                                    </div>
+                                </div>
+                                <div class="reserve-chambre">
+                                    <svg class="icon">
+                                        <use
+                                            xlink:href="#icon-calendrier"
+                                        ></use>
+                                    </svg>
+                                    <p>Réserver</p>
+                                </div>
+                            </div>
+                            <div class="contenu__chambre">
+                                <h4>La Hôpa!</h4>
+                                <p>Chambre avec lit Queen:</p>
+                                <ul>
+                                    <li>Salle de bain privée</li>
+                                    <li>Télévision à écran plat</li>
+                                    <li>
+                                        Machine à café (offre de café, thé et
+                                        tisane)
+                                    </li>
+                                    <li>Wi-Fi et parking gratuit</li>
+                                    <li>Ventilateur</li>
+                                    <li>
+                                        Climatisation durant la saison estivale
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="chambre" data-filtre="queen">
+                            <div class="image-chambre">
+                                <div class="image-relative">
+                                    <div class="image-relative">
+                                        <img
+                                            src="assets/images/chambre2.png"
+                                            alt=""
+                                        />
+                                        <div class="prix-chambre">
+                                            <p class="p1__prix">125$CAD</p>
+                                            <p>Disponible</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reserve-chambre">
+                                    <svg class="icon icon--md">
+                                        <use
+                                            xlink:href="#icon-calendrier"
+                                        ></use>
+                                    </svg>
+                                    <p>Résever</p>
+                                </div>
+                            </div>
+                            <div class="contenu__chambre">
+                                <h4>La Ceilidh</h4>
+                                <p>Chambre avec lit Queen:</p>
+                                <ul>
+                                    <li>Salle de bain privée</li>
+                                    <li>Télévision à écran plat</li>
+                                    <li>
+                                        Machine à café (offre de café, thé et
+                                        tisane)
+                                    </li>
+                                    <li>Wi-Fi et parking gratuit</li>
+                                    <li>Ventilateur</li>
+                                    <li>
+                                        Climatisation durant la saison estivale
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="chambre" data-filtre="suite">
+                            <div class="image-chambre">
+                                <div class="image-relative">
+                                    <img
+                                        src="assets/images/chambre3.png"
+                                        alt=""
+                                    />
+                                    <div class="prix-chambre">
+                                        <p class="p1__prix">125$CAD</p>
+                                        <p>Disponible</p>
+                                    </div>
+                                </div>
+                                <div class="reserve-chambre">
+                                    <svg class="icon">
+                                        <use
+                                            xlink:href="#icon-calendrier"
+                                        ></use>
+                                    </svg>
+                                    <p>Résever</p>
+                                </div>
+                            </div>
+                            <div class="contenu__chambre">
+                                <h4>La Biophilia</h4>
+                                <p>Chambre avec lit Queen:</p>
+                                <ul>
+                                    <li>Salle de bain privée</li>
+                                    <li>Télévision à écran plat</li>
+                                    <li>
+                                        Machine à café (offre de café, thé et
+                                        tisane)
+                                    </li>
+                                    <li>Wi-Fi et parking gratuit</li>
+                                    <li>Ventilateur</li>
+                                    <li>
+                                        Climatisation durant la saison estivale
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="chambre" data-filtre="twins">
+                            <div class="image-chambre">
+                                <div class="image-relative">
+                                    <img
+                                        src="assets/images/chambre4.png"
+                                        alt=""
+                                    />
+                                    <div class="prix-chambre">
+                                        <p class="p1__prix">125$CAD</p>
+                                        <p>Disponible</p>
+                                    </div>
+                                </div>
+                                <div class="reserve-chambre">
+                                    <svg class="icon">
+                                        <use
+                                            xlink:href="#icon-calendrier"
+                                        ></use>
+                                    </svg>
+                                    <p>Résever</p>
+                                </div>
+                            </div>
+                            <div class="contenu__chambre">
+                                <h4>La Jabak</h4>
+                                <p>Chambre avec lit Queen:</p>
+                                <ul>
+                                    <li>Salle de bain privée</li>
+                                    <li>Télévision à écran plat</li>
+                                    <li>
+                                        Machine à café (offre de café, thé et
+                                        tisane)
+                                    </li>
+                                    <li>Wi-Fi et parking gratuit</li>
+                                    <li>Ventilateur</li>
+                                    <li>
+                                        Climatisation durant la saison estivale
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="option-reservation" data-scrolly="AppearFromBottom">
+                <div class="wrapper">
+                    <div class="colonne1">
+                        <p>
+                            Accessible dans l’aire commune pour toutes les
+                            chambres:
+                        </p>
+                        <ul>
+                            <li>Petit salon</li>
+                            <li>Réfrigérateur</li>
+                            <li>Micro-ondes</li>
+                            <li>Bouilloire</li>
+                            <li>Couverts</li>
+                        </ul>
+                    </div>
+                    <div class="colonne2_3">
+                        <div class="colonne2">
+                            <p>Optionnel avec toute réservation*:</p>
+                            <p>
+                                Boîte déjeuners du Bistro la Marelle, livrée à
+                                votre chambre à 9h le lendemain.
+                            </p>
+                            <p>Incluant:</p>
+                            <ul>
+                                <li>Viennoiseries / Demi-baguette</li>
+                                <li>Jambon blanc / Proscuito</li>
+                                <li>Rillette de canard</li>
+                                <li>Fromage du Québec</li>
+                                <li>Fruits frais / Smoothies</li>
+                                <li>Confitures de France</li>
+                            </ul>
+                        </div>
+                        <div class="colonne3">
+                            <h5>29.00$</h5>
+                            <p>Pour 2 personnes</p>
+                            <p class="options__asterix">
+                                * Vous pouvez sélectionner la boîte dans le
+                                processus de réservation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="citation__auberge" data-scrolly="AppearFromLeft">
+                <div class="wrapper">
+                    <div class="text-citation">
+                        <p class="guillemets">«</p>
+                        <p>
+                            Les six chambres de l’auberge disposent d’une salle
+                            de bain privée, d’un téléviseur et d’un ou deux lits
+                            (lit à deux places, grand lit, 1 ou 2 lits à une
+                            place) dans un décor le plus naturel possible. La
+                            suite avec son entrée privée et son bain
+                            thérapeutique a son charme. Dans le dortoir mixte,
+                            10 lits à une place de même que 2 lits à deux places
+                            sont superposés dans la vaste pièce lumineuse et
+                            chaleureuse pleine de bois. Les lits ont été conçus
+                            par un artisan du village, teints au café et au
+                            chaga puis vernis à l’huile de chanvre bio et à
+                            l’huile de lin. Il s’en dégage un agréable parfum
+                            végétal. Le dortoir dispose de deux toilettes, deux
+                            douches et de casiers sécurisés. On s’y sent bien et
+                            on s’amuse.
+                        </p>
+                        <p class="guillemets">
+                            <span class="citation_auteur"
+                                >-journal de Montréal
+                            </span>
+                            »
+                        </p>
+                    </div>
+                </div>
+                <img src="assets/images/citation-auberge.png" alt="" />
+            </section>
+
+            <section class="galerie__auberge">
+                <div class="wrapper">
+                    <div
+                        class="caroussel-chambre"
+                        data-scrolly="AppearFromRight"
+                    >
+                        <h3>Chambres Privées</h3>
+                        <div
+                            class="swiper-container carousel-auberge"
+                            data-component="Carousel"
+                            data-carousel="split"
+                        >
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-content">
+                                        <div class="degrade"></div>
+                                        <img
+                                            src="assets/images/auberge_caroussel1.jfif"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-content">
+                                        <div class="degrade"></div>
+                                        <img
+                                            src="assets/images/auberge_caroussel2.jfif"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-content">
+                                        <div class="degrade"></div>
+                                        <img
+                                            src="assets/images/auberge_caroussel3.jfif"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-content">
+                                        <div class="degrade"></div>
+                                        <img
+                                            src="assets/images/auberge_caroussel4.jfif"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-content">
+                                        <div class="degrade"></div>
+                                        <img
+                                            src="assets/images/auberge_caroussel5.jfif"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-content">
+                                        <div class="degrade"></div>
+                                        <img
+                                            src="assets/images/auberge_caroussel6.jfif"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-content">
+                                        <div class="degrade"></div>
+                                        <img
+                                            src="assets/images/auberge_caroussel7.jfif"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-content">
+                                        <div class="degrade"></div>
+                                        <img
+                                            src="assets/images/auberge_caroussel8.jfif"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-content">
+                                        <div class="degrade"></div>
+                                        <img
+                                            src="assets/images/auberge_caroussel9.jfif"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-content">
+                                        <div class="degrade"></div>
+                                        <img
+                                            src="assets/images/auberge_caroussel10.jfif"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-content">
+                                        <div class="degrade"></div>
+                                        <img
+                                            src="assets/images/auberge_caroussel11.jfif"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-content">
+                                        <div class="degrade"></div>
+                                        <img
+                                            src="assets/images/auberge_caroussel12.jfif"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-content">
+                                        <div class="degrade"></div>
+                                        <img
+                                            src="assets/images/auberge_caroussel13.jfif"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="caroussel-dortoir"
+                        data-scrolly="AppearFromLeft"
+                    >
+                        <h3>Dortoir construit par un artisant local</h3>
+                        <div
+                            class="swiper-container carousel-auberge"
+                            data-component="Carousel"
+                            data-carousel="split"
+                        >
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-content">
+                                        <div class="degrade"></div>
+                                        <img
+                                            src="assets/images/dortoir1.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-content">
+                                        <div class="degrade"></div>
+                                        <img
+                                            src="assets/images/dortoir2.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-content">
+                                        <div class="degrade"></div>
+                                        <img
+                                            src="assets/images/dortoir3.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="swiper-slide-content">
+                                        <div class="degrade"></div>
+                                        <img
+                                            src="assets/images/dortoir4.jpg"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                    <p data-scrolly="AppearFromBottom">
+                        Au plaisir de vous accueillir et de vous partager notre
+                        passion pour la bonne bière, la bonne bouffe, et la vie
+                        champêtre de Val-David !
+                    </p>
+                </div>
+            </section>
+
+            <section class="newsletter">
+                <div class="wrapper">
+                    <div class="flex-newsletter">
+                        <div class="form">
+                            <div class="newsletter_title">
+                                <h2 class="title">Infolettre</h2>
+                            </div>
+                            <form
+                                action=""
+                                class="form"
+                                autocomplete="off"
+                                data-component="Form"
+                            >
+                                <fieldset class="grid">
+                                    <div class="input">
+                                        <label
+                                            class="input__label"
+                                            for="firstname"
+                                        >
+                                            Prénom</label
+                                        >
+                                        <input
+                                            class="input__element"
+                                            type="text"
+                                            name="firstname"
+                                            id="firstname"
+                                            required
+                                        />
+                                    </div>
+
+                                    <div class="input">
+                                        <label
+                                            class="input__label"
+                                            for="lastname"
+                                            >Nom</label
+                                        >
+                                        <input
+                                            class="input__element"
+                                            type="text"
+                                            name="lastname"
+                                            id="lastname"
+                                            required
+                                        />
+                                    </div>
+
+                                    <div class="input">
+                                        <label class="input__label" for="email"
+                                            >Votre courriel</label
+                                        >
+                                        <input
+                                            class="input__element"
+                                            type="email"
+                                            name="email"
+                                            id="email"
+                                            required
+                                        />
+                                    </div>
+                                </fieldset>
+
+                                <footer class="form__footer">
+                                    <button class="btn btn-lg">Envoyer</button>
+                                </footer>
+                            </form>
+                        </div>
+
+                        <img
+                            src="assets/images/photo_infolettre.png"
+                            alt="poutine"
+                        />
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

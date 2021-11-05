@@ -1,0 +1,41 @@
+.newsletter {
+    img {
+        display: none;
+    }
+
+    background-color: var(--color-bg-dark-light);
+    color: var(--color-white);
+    text-align: center;
+
+    h2 {
+        font-family: var(--font-primary);
+    }
+
+    fieldset {
+        border: none;
+    }
+
+    .input {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        margin-bottom: var(--spacing-sm);
+
+        font-size: var(--font-size-very-small);
+
+        input {
+            padding: var(--spacing-sm) var(--spacing-lg);
+            border-radius: 3px;
+            border: none;
+            width: 100%;
+        }
+    }
+
+    .btn {
+        margin: var(--spacing-lg);
+    }
+
+}
+
+

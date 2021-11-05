@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Le Baril Roulant</title>
+
+        <link rel="stylesheet" href="styles/main.css" />
+        <script src="scripts/main.js" defer></script>
+    </head>
+
+    <body data-component="Cursor">
+        <div class="site-container" data-component="Scrolly">
+            <div class="cursor"></div>
+
+            <section class="newsletter">
+                <div class="wrapper">
+                    <div class="flex-newsletter">
+                        <div class="form">
+                            <div class="newsletter_title">
+                                <h2 class="title">Infolettre</h2>
+                            </div>
+                            <form
+                                action=""
+                                class="form"
+                                autocomplete="off"
+                                data-component="Form"
+                            >
+                                <fieldset class="grid">
+                                    <div
+                                        class="input"
+                                        data-scrolly="AppearFromBottom"
+                                    >
+                                        <label
+                                            class="input__label"
+                                            for="firstname"
+                                        >
+                                            Prénom</label
+                                        >
+                                        <input
+                                            class="input__element"
+                                            type="text"
+                                            name="firstname"
+                                            id="firstname"
+                                            required
+                                        />
+                                    </div>
+
+                                    <div
+                                        class="input"
+                                        data-scrolly="AppearFromBottom"
+                                    >
+                                        <label
+                                            class="input__label"
+                                            for="lastname"
+                                            >Nom</label
+                                        >
+                                        <input
+                                            class="input__element"
+                                            type="text"
+                                            name="lastname"
+                                            id="lastname"
+                                            required
+                                        />
+                                    </div>
+
+                                    <div
+                                        class="input"
+                                        data-scrolly="AppearFromBottom"
+                                    >
+                                        <label class="input__label" for="email"
+                                            >Votre courriel</label
+                                        >
+                                        <input
+                                            class="input__element"
+                                            type="email"
+                                            name="email"
+                                            id="email"
+                                            required
+                                        />
+                                    </div>
+                                </fieldset>
+
+                                <footer class="form__footer">
+                                    <button class="btn btn-lg">Envoyer</button>
+                                </footer>
+                            </form>
+                        </div>
+
+                        <img
+                            src="assets/images/photo_infolettre.png"
+                            alt="poutine"
+                        />
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="wrapper">
+                    <div class="social-flex">
+                        <a
+                            href="https://www.instagram.com/baril.roulant/"
+                            data-scrolly="AppearFromLeft"
+                        >
+                            <svg class="icon icon--lg icon-1">
+                                <use xlink:href="#icon-instagram"></use>
+                            </svg>
+                        </a>
+
+                        <a
+                            href="https://www.facebook.com/Brasserie.Artisanale.Le.Baril.Roulant/"
+                            data-scrolly="AppearFromRight"
+                        >
+                            <svg class="icon icon--lg icon-2">
+                                <use xlink:href="#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="title-n-address">
+                        <h2 class="title">Le Baril Roulant</h2>
+                        <p class="address">
+                            1430 Rue de l'Académie, Val-David, Québec, J0T 2N0
+                            891-322-2280
+                        </p>
+                    </div>
+
+                    <div class="button-footer">
+                        <a
+                            href="mailto:auberge@barilroulant.com"
+                            class="button-item"
+                            data-scrolly="AppearFromBottom"
+                            >Contactez-nous</a
+                        >
+                    </div>
+                    <a href="#" class="lien-termsandcondititions"
+                        >Termes et Conditions de l’utilisation de l’interface
+                        UEat</a
+                    >
+                    <p class="credit">
+                        Justine Gagnon, Marie-Eve Lamontagne, Nickolas Laforest
+                        © 2021
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

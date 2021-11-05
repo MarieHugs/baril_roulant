@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Le Baril Roulant</title>
+
+        <link rel="stylesheet" href="styles/main.css" />
+        <script src="scripts/main.js" defer></script>
+    </head>
+
+    <body>
+        <div class="site-container" data-component="Cursor">
+            <div class="cursor"></div>
+
+            <header
+                class="header"
+                data-component="Header"
+                data-scroll-limit=".1"
+                data-auto-hide="true"
+            >
+                <div class="header-wrapper">
+                    <a href="front-page.html"
+                        ><img
+                            src="assets/images/logo.png"
+                            alt="logo"
+                            class="logo"
+                    /></a>
+                    <ul class="header__menu">
+                        <li><a href="a_propos.html">À propos</a></li>
+                        <li class="dropdown">
+                            <a href="" onclick="return false;"
+                                >Activités
+                                <svg class="icon icon--sm">
+                                    <use xlink:href="#icon-dropdown"></use>
+                                </svg>
+                            </a>
+
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="restaurant.html"
+                                        >Restaurants & pubs</a
+                                    >
+                                </li>
+                                <li><a href="auberge.html">Auberge</a></li>
+                                <li><a href="">Événements</a></li>
+                                <li><a href="">Microbrasserie</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="">Offres d'emplois</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <button class="header__toggle js-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </header>
+        </div>
+    </body>
+</html>
