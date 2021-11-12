@@ -21,7 +21,7 @@
 
         <div class="button-flex" data-scrolly="AppearFromBottom">
             <a href="" class="button-flex-item">Menu du moment</a>
-            <a href="" class="button-flex-item">liste des boissons</a>
+            <a href="" class="button-flex-item">Liste des boissons</a>
         </div>
         <p data-scrolly="AppearFromBottom">
             <?php the_field('txt_before_button') ?>
