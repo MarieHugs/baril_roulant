@@ -2,7 +2,7 @@
     <div class="wrapper">
         <div class="flex-newsletter">
 
-            <?php echo do_shortcode('[gravityform id="2"] ')?>
+            <?php echo do_shortcode('[gravityform id="2" ajax=true] ')?>
 
 
             <img src="<?php bloginfo('template_url') ?>/assets/images/photo_infolettre.png" alt="poutine" />

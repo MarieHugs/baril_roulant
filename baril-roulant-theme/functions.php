@@ -147,4 +147,7 @@ function custom_post_type() {
 }
 add_action( 'init', 'custom_post_type', 0 );
 
-
+// Custom message de la légende du formulaire
+add_filter( 'gform_required_legend', function( $legend, $form ) {
+    return '"Requis" indique les champs obligatoires';
+}, 10, 2 );
