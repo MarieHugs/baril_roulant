@@ -151,3 +151,12 @@ add_action( 'init', 'custom_post_type', 0 );
 add_filter( 'gform_required_legend', function( $legend, $form ) {
     return '"Requis" indique les champs obligatoires';
 }, 10, 2 );
+
+/**
+ * Add textdomain support to the theme
+ */
+add_action('after_setup_theme', 'load_textdomain_func');
+function load_textdomain_func()
+{
+    load_theme_textdomain('BarilRoulant', get_template_directory() . '/languages');
+}
