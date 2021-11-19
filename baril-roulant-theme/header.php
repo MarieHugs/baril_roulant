@@ -2,20 +2,22 @@
 <html lang="fr">
 
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZBTM2V6YCK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZBTM2V6YCK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-  gtag('config', 'G-ZBTM2V6YCK');
-</script>
+        gtag('config', 'G-ZBTM2V6YCK');
+    </script>
+
 
     <meta charset="<?php bloginfo('charset'); ?>" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><?php bloginfo('name'); ?></title>
 
+    <meta name="google-site-verification" content="8efoHEVTnveSQLn0DPfHyLnU6Y_v7PkfhCpCdqUqK54" />
     <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/styles/main.css">
     <script src="<?php bloginfo('template_url') ?>/scripts/main.js" defer></script>
 

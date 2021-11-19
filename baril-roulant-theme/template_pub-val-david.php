@@ -15,7 +15,7 @@ Template Name:pub Val-David
         <h1><?php the_title();?></h1>
 
         <div class="button-flex" data-scrolly="AppearFromBottom">
-            <a href="#" class="button-flex-item">Découvrez la programmation du moment</a>
+            <a href="#" class="button-flex-item"><?php echo __('Découvrez la programmation du moment', 'BarilRoulant'); ?></a>
         </div>
         <p data-scrolly="AppearFromBottom">
             <?php the_field('texte_debut') ?>
@@ -52,7 +52,7 @@ Template Name:pub Val-David
 
 
     <div class="button-biere">
-        <a href="#" class="button-item">Découvrir les bières maisons</a>
+        <a href="#" class="button-item"><?php echo __('Découvrir les bières maisons', 'BarilRoulant'); ?></a>
     </div>
 
 

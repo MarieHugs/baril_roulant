@@ -1,3 +1,6 @@
+<!-- /*
+Template Name: Restaurant
+*/ -->
 <?php get_header(); ?>
 
 
@@ -20,7 +23,7 @@
         <p><?php the_content();?></p>
 
         <div class="button-flex" data-scrolly="AppearFromBottom">
-            <a href="" class="button-flex-item"> <?php echo __('Menu du moment', 'BarilRoulant'); ?></a>
+            <a href="" class="button-flex-item"><?php echo __('Menu du moment', 'BarilRoulant'); ?></a>
             <a href="" class="button-flex-item"><?php echo __('Liste des boissons', 'BarilRoulant'); ?></a>
         </div>
         <p data-scrolly="AppearFromBottom">
@@ -69,7 +72,7 @@
             </a>
 
             <a href="<?php bloginfo('url'); ?>/Pub-Tremblant" class="button-flex-item">
-                <?php echo __('Pub de Tremblant', 'BarilRoulant'); ?>
+                <?php echo __('Pub de Tremblant', 'BarilRoulant'); ?> 
             </a>
         </div>
     </div>
@@ -133,7 +136,7 @@
 
 
     <div class="timetable-n-maps">
-        <h3 class="title"><?php echo __('Horaire', 'BarilRoulant'); ?></h3>
+        <h3 class="title">Horaire</h3>
         <?php if (have_rows('repeteur_horaire')): ?>
         <div class="times" data-scrolly="AppearFromRight">
 

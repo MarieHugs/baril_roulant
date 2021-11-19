@@ -62,7 +62,7 @@
         <?php while( have_rows('accueil_activites') ): the_row(); ?>
 
             <section class="activites-accueil wrapper">
-                <h1 data-scrolly="AppearFromBottom">Activités</h1>
+                <h1 data-scrolly="AppearFromBottom"><?php echo __('Activités', 'BarilRoulant'); ?></h1>
                 <div class="container-activites">
 
                     <div class="haut" data-scrolly="AppearFromBottom">
